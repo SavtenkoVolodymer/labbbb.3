@@ -1,5 +1,9 @@
 #include <iostream>
 #include "Client.h"//
+int Client::Amount = 0;
+int Client ::getAmount(){
+    return Amount ;
+}
 Client::Client()
         : Client({"None"},{0},{0} ){}
 Client::Client(std::string new_name)
@@ -7,7 +11,7 @@ Client::Client(std::string new_name)
 Client::Client(std::string new_name, int new_age)
         :Client({new_name},{new_age},{0}) {}
 Client::Client(std::string new_name, int new_age, int new_days)
-        : name{new_name},age{new_age},days{new_days} {}
+        : name{new_name},age{new_age},days{new_days} {Amount++;}
 void Client::PrintClient(){
     cout<<"Name "<<name<<" Age: "<<age<< " For how many days: "<<days;
 }

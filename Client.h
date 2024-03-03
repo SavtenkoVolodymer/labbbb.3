@@ -7,10 +7,12 @@ using namespace std;
 
 class Client {
 private:
+    static int Amount;
     string name;
     int age;
     int days;
 public:
+    static int getAmount();
     void PrintClient();
     Client();
     Client(string new_name);
@@ -23,3 +25,4 @@ public:
         cout << "Destructor is here";
     }
 };
+#endif //VOVA_HOTEL_H

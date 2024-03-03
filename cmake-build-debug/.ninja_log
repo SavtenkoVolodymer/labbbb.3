@@ -1,0 +1,8 @@
+# ninja log v5
+3	356	7312013740835947	CMakeFiles/Lab.dir/Hotel.cpp.obj	461ab42f01fd1aca
+0	367	7312013740973631	CMakeFiles/Lab.dir/main.cpp.obj	2fc8285b1b861944
+6	377	7312013741067033	CMakeFiles/Lab.dir/Client.cpp.obj	5ba69e344fa1a5ab
+8	405	7312013741347015	CMakeFiles/Lab.dir/StuffMember.cpp.obj	ef2ef75575ca5c58
+405	508	7312013742303425	Lab.exe	62f285c860ebc9ef
+3	303	7312014579835969	CMakeFiles/Lab.dir/Client.cpp.obj	5ba69e344fa1a5ab
+303	394	7312014580678747	Lab.exe	62f285c860ebc9ef

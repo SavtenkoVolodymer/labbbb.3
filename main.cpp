@@ -29,7 +29,7 @@ int main() {
     Brain.PrintClient();
     cout<<endl<<"Copy ";
     Namber.PrintClient();
-
+cout<<"Amount "<<Client::getAmount();
 
 
     return 0;
