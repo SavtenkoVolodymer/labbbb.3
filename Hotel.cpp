@@ -1,9 +1,12 @@
 #include <iostream>
 #include "Hotel.h"
 
-Hotel::Hotel(std::string newname, int newyears, std::string newrate)
-        : name{newname}, years{newyears}, rate{newrate}
-{}
+Hotel Hotel::operator -()const{
+    return Hotel (-years);
+}
+Hotel Hotel::operator - (const Hotel &other) const {
+    return Hotel(years -other.years);
+}
 void Hotel::PrintHotel(){
-    cout<<"Name: "<<name<<" Years:"<<years<<" Rate:"<< rate<<endl;
+    cout<< "Years: "<<years;
 }

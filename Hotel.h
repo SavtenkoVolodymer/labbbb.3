@@ -6,12 +6,14 @@ using namespace std;
 
 class Hotel {
 private:
-    string name;
+
     int years;
-    string rate;
+
 public:
     void PrintHotel();
-    Hotel(std::string newname="None", int newyears=0, std::string newrate="unknown");
+    Hotel(int newyears): years (newyears){};
+    Hotel operator -()const;
+    Hotel operator -(const Hotel &other) const;
     ~Hotel(){
         cout<<endl;
         cout<<"Destructor is here";

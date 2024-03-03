@@ -12,10 +12,6 @@ int main() {
     Client Next("Vova",19);
     Next.PrintClient();
     cout<<endl;
-    Hotel Last;
-    Last.PrintHotel();
-    Hotel chinazes{Hotel("Namber",2,"Good")};
-    chinazes.PrintHotel();
     Client Vovan("Oracul",17,5);
     Client Anton = Vovan;
     cout<<"Original ";
@@ -30,6 +26,18 @@ int main() {
     cout<<endl<<"Copy ";
     Namber.PrintClient();
 cout<<"Amount "<<Client::getAmount();
+Hotel Orion (12);
+Hotel Grek = -Orion;
+cout<< endl;
+Orion.PrintHotel();
+cout<<endl;
+Grek.PrintHotel();
+cout<<endl;
+Hotel Drag (34);
+Hotel Baba(32);
+Hotel Hostel =Drag - Baba;
+Hostel.PrintHotel();
+
 
 
     return 0;
