@@ -2,6 +2,7 @@
 #include "StuffMember.h"
 #include "Client.h"
 #include "Hotel.h"
+#include "Admin.h"
 
 
 int main() {
@@ -37,6 +38,12 @@ Hotel Drag (34);
 Hotel Baba(32);
 Hotel Hostel =Drag - Baba;
 Hostel.PrintHotel();
+cout<<endl;
+Admin Stepa;
+cin<<Stepa;
+cout<<Stepa;
+
+
 
 
 

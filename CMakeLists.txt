@@ -9,4 +9,6 @@ add_executable(Lab main.cpp
         Hotel.cpp
         Hotel.h
         StuffMember.cpp
-        StuffMember.h)
+        StuffMember.h
+        Admin.cpp
+        Admin.h)
