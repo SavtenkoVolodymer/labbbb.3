@@ -11,12 +11,12 @@ class Admin {
 private:
     string First;
     string Last;
+    int age;
 public:
+    Admin();
+    Admin(string newFirst , string newLast, int newage);
     friend ostream & operator <<(ostream &out, const Admin &n);
-    friend istream & operator >>(istream &in , Admin &n);
     ~Admin(){
-        cout<< endl;
-        cout<<"Destructor is here";
     }
 };
 

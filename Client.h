@@ -13,13 +13,13 @@ private:
     int days;
 public:
     Client();
-    Client(string Hname, int Hyears,string Hschuadle ,string new_name, int new_age, int new_days);
+    Client(string Hname, int Hyears,string Hschedule ,string new_name, int new_age, int new_days);
     friend ostream &operator<<(ostream &os, const Client &obj) ;
 
     Client(const Client &other);
+    Client operator=(const Client &rhs);
     ~Client() {
-        cout << endl;
-        cout << "Destructor is here";
+
     }
 };
 #endif //VOVA_HOTEL_H

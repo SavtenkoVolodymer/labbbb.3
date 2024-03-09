@@ -12,15 +12,15 @@ private:
 public:
     Hotel();
     Hotel (string newname, int newyears,string newschedule);
-    ~Hotel(){
-        cout<<endl;
-        cout<<"Destructor is here";
-    }
- friend ostream & operator<<(ostream &os,const Hotel &obj);
-
-
+    friend ostream & operator<<(ostream &os,const Hotel &obj);
     Hotel (const Hotel &other);
     Hotel (Hotel &&other);
+    Hotel operator=(const Hotel &rhs);
+    ~Hotel(){
+    }
+
+
+
 
 };
 

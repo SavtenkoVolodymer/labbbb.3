@@ -3,7 +3,21 @@
 
 Client :: Client ()
     : Hotel (), name("unknown"),age(0),days(0) {}
-    Client :: Client (string Hname, int Hyears,string Hschuadle ,string new_name, int new_age, int new_days)
-        : Hotel ( Hname,  Hyears, Hschuadle), name(new_name),age(new_age),days(new_days){}
+    Client :: Client (string Hname, int Hyears,string Hschedule ,string new_name, int new_age, int new_days)
+        : Hotel ( Hname,  Hyears, Hschedule), name(new_name),age(new_age),days(new_days){}
         Client :: Client (const Client &other)
             : Hotel (other),name(other.name),age(other.age),days(other.days){}
+            ostream &operator<<(ostream &os, const Client &obj) {
+    os<< "Name: "<<obj.name<<"  Age: "<<obj.age<<"  Days: "<<obj.days<<static_cast <const Hotel&>(obj);
+    return os;
+}
+Client Client::operator=(const Client &rhs) {
+    if(this==&rhs)
+        return *this;
+    else{
+        name=rhs.name;
+        age=rhs.age;
+        days=rhs.days;
+        return *this;
+    }
+}

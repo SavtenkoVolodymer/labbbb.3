@@ -13,10 +13,11 @@ public:
     StuffMember();
     StuffMember( string Hname , int Hyears, string Hschedule ,string new_name, int new_age, int new_years);
     friend ostream &operator<<(ostream &os, const StuffMember &obj);
+    StuffMember (StuffMember &&other);
     ~StuffMember() {
-        cout << endl;
-        cout << "Destructor is here";
     }
+
+
 
 };
 

@@ -11,4 +11,7 @@ add_executable(Lab main.cpp
         StuffMember.cpp
         StuffMember.h
         Admin.cpp
-        Admin.h)
+        Admin.h
+        Owner.cpp
+        Owner.h
+)
