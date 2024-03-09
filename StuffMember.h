@@ -1,23 +1,23 @@
 #ifndef VOVA_STUFFMEMBER_H
 #define VOVA_STUFFMEMBER_H
 #include <iostream>
+#include "Hotel.h"
 using namespace std;
 
-class StuffMember {
+class StuffMember : public Hotel {
 private:
     string name;
     int age;
     int years;
 public:
-    void PrintStuff();
     StuffMember();
-    StuffMember(string new_name);
-    StuffMember(string new_name, int new_age);
-    StuffMember(string new_name, int new_age, int new_years);
+    StuffMember( string Hname , int Hyears, string Hschedule ,string new_name, int new_age, int new_years);
+    friend ostream &operator<<(ostream &os, const StuffMember &obj);
     ~StuffMember() {
         cout << endl;
         cout << "Destructor is here";
     }
+
 };
 
 

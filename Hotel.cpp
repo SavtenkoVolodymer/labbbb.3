@@ -1,12 +1,13 @@
 #include <iostream>
 #include "Hotel.h"
 
-Hotel Hotel::operator -()const{
-    return Hotel (-years);
+Hotel :: Hotel ()
+    : Hotel {"None",0,"unknown"} {}
+  Hotel :: Hotel (string newname,int newyears,string newschedule)
+    : name {newname},years {newyears},schedule {newschedule} {}
+    ostream & operator<< (ostream &os, const Hotel &obj ){
+    os<<"  Name: "<<obj.name<<"  Years: "<<obj.years<<"  Schedule: "<<obj.schedule;
+    return os;
 }
-Hotel Hotel::operator - (const Hotel &other) const {
-    return Hotel(years -other.years);
-}
-void Hotel::PrintHotel(){
-    cout<< "Years: "<<years;
-}
+
+

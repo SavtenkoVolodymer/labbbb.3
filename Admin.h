@@ -13,7 +13,7 @@ private:
     string Last;
 public:
     friend ostream & operator <<(ostream &out, const Admin &n);
-    friend istream & operator <<(istream &in , Admin &n);
+    friend istream & operator >>(istream &in , Admin &n);
     ~Admin(){
         cout<< endl;
         cout<<"Destructor is here";

@@ -6,18 +6,21 @@ using namespace std;
 
 class Hotel {
 private:
-
+    string name;
     int years;
-
+    string schedule;
 public:
-    void PrintHotel();
-    Hotel(int newyears): years (newyears){};
-    Hotel operator -()const;
-    Hotel operator -(const Hotel &other) const;
+    Hotel();
+    Hotel (string newname, int newyears,string newschedule);
     ~Hotel(){
         cout<<endl;
         cout<<"Destructor is here";
     }
+ friend ostream & operator<<(ostream &os,const Hotel &obj);
+
+
+    Hotel (const Hotel &other);
+    Hotel (Hotel &&other);
 
 };
 

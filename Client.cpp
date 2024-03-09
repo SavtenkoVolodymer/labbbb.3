@@ -1,28 +1,9 @@
 #include <iostream>
-#include "Client.h"//
-int Client::Amount = 0;
-int Client ::getAmount(){
-    return Amount ;
-}
-Client::Client()
-        : Client({"None"},{0},{0} ){}
-Client::Client(std::string new_name)
-        : Client({new_name},{0},{0}) {}
-Client::Client(std::string new_name, int new_age)
-        :Client({new_name},{new_age},{0}) {}
-Client::Client(std::string new_name, int new_age, int new_days)
-        : name{new_name},age{new_age},days{new_days} {Amount++;}
-void Client::PrintClient(){
-    cout<<"Name "<<name<<" Age: "<<age<< " For how many days: "<<days;
-}
-Client::Client(const Client &other){
-    name=other.name;
-    age=other.age;
-    days=other.days;
-}
-Client::Client(Client&& other)
-        :name(other.name),age(other.age),days(other.days){
-    other.name=" ";
-    other.age=0;
-    other.days =0;
-}
+#include "Client.h"
+
+Client :: Client ()
+    : Hotel (), name("unknown"),age(0),days(0) {}
+    Client :: Client (string Hname, int Hyears,string Hschuadle ,string new_name, int new_age, int new_days)
+        : Hotel ( Hname,  Hyears, Hschuadle), name(new_name),age(new_age),days(new_days){}
+        Client :: Client (const Client &other)
+            : Hotel (other),name(other.name),age(other.age),days(other.days){}

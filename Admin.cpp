@@ -8,7 +8,7 @@ ostream & operator <<(ostream &out , const Admin &n){
     out<<"Last name: "<<n.Last;
     return out;
 }
-istream & operator <<(istream &in, Admin &n){
+istream & operator >>(istream &in, Admin &n){
     cout<<"First ";
     in>>n.First;
     cout<<"Second: ";
