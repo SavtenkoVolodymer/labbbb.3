@@ -17,7 +17,7 @@ public:
     Admin(string newFirst , string newLast, int newage);
     friend ostream & operator <<(ostream &out, const Admin &n);
     ~Admin(){
-    }
+    };
 };
 
 

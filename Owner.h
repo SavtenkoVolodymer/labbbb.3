@@ -16,9 +16,7 @@ public:
     Owner();
     Owner (string newname, int newage , string newsex, Admin theadmin);
     friend ostream &operator<<(ostream &os,const Owner &obj);
-    ~Owner(){
-
-    }
+    ~Owner(){};
 
 };
 

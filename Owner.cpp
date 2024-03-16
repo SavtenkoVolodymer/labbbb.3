@@ -9,4 +9,6 @@ Owner :: Owner()
         ostream &operator<<(ostream &os,const Owner &obj){
     os<<"Name: "<<obj.name<<"  Age: "<<obj.age<<"  Sex: "<<obj.sex<<obj.admin;
     return os;
+
+
 }

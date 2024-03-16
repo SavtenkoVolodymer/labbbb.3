@@ -20,4 +20,12 @@ Client Client::operator=(const Client &rhs) {
         days=rhs.days;
         return *this;
     }
+
+}
+
+void Client :: Function (){
+    cout<<"Name client: "<<name<<endl<<"Age: "<<age<<endl<<"Days: "<<days<<endl;
+};
+void Client ::Example (){
+    cout <<"Subsidiary class function method";
 }

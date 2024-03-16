@@ -16,9 +16,8 @@ public:
     StuffMember (StuffMember &&other);
     ~StuffMember() {
     }
-
-
-
+    void Function () ;
+    void Example () override ;
 };
 
 

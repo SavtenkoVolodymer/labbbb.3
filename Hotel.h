@@ -19,6 +19,9 @@ public:
     ~Hotel(){
     }
 
+    void Function ();
+    virtual void Example ();
+
 
 
 

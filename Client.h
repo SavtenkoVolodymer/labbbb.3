@@ -21,5 +21,9 @@ public:
     ~Client() {
 
     }
+
+    void Function () ;
+    void Example () override;
 };
+
 #endif //VOVA_HOTEL_H
