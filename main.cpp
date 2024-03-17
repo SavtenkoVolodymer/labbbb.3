@@ -29,7 +29,10 @@ int main() {
     Stuff -> Function();
     cout<<endl;
     Stuff -> Example();
-
+    Hotel *Redefinition = new Client ("Anton",19, "C" ,"A",12,15);
+    Redefinition -> Function2();
+    cout<<endl;
+    Redefinition -> Example2();
     return 0;
 
 }

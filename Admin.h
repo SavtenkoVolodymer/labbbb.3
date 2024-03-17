@@ -7,7 +7,7 @@ using namespace std;
 
 
 
-class Admin {
+class Admin final {
 private:
     string First;
     string Last;

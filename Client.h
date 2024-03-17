@@ -18,12 +18,13 @@ public:
 
     Client(const Client &other);
     Client operator=(const Client &rhs);
-    ~Client() {
-
-    }
+    ~Client() override {};
 
     void Function () ;
     void Example () override;
+    void Function2 ();
+    void Example2 () override;
+
 };
 
 #endif //VOVA_HOTEL_H
