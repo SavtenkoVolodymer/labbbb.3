@@ -19,5 +19,9 @@ void StuffMember :: Function(){
     cout<<"Name: "<<name<<endl<<"Age: "<<age<<endl<<"Years: "<<years<<endl;
 };
 void StuffMember ::Example (){
-    cout << "Subsidiary class function method";
+    cout <<"Subsidiary class function method";
+    cout<<endl;
+}
+void StuffMember :: Best (Hotel &other) {
+    cout<<other<<endl;
 }

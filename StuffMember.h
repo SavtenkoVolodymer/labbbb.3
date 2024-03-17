@@ -17,6 +17,7 @@ public:
     ~StuffMember() override {};
     void Function () ;
     void Example () override ;
+    void Best (Hotel &other);
 };
 
 

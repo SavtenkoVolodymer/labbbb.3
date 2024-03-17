@@ -28,10 +28,12 @@ void Client :: Function (){
 };
 void Client ::Example (){
     cout <<"Subsidiary class function method";
+    cout<<endl;
 }
 void Client :: Function2 (){
     cout<<"Name client: "<<name<<endl<<"Age: "<<age<<endl<<"Days: "<<days<<endl;
 };
 void Client ::Example2 (){
     cout <<"Redefinition";
+    cout<<endl;
 }

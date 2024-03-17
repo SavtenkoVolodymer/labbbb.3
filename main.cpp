@@ -23,16 +23,20 @@ int main() {
 
     Hotel *Pointer = new Client ("Anya",25, "B" ,"A",12,15);
     Pointer -> Function();
-    cout<<endl;
     Pointer -> Example();
+    cout<<endl;
     Hotel *Stuff = new StuffMember ("Vlad",29, "A" ,"A",11,17);
     Stuff -> Function();
-    cout<<endl;
     Stuff -> Example();
+    cout<<endl;
     Hotel *Redefinition = new Client ("Anton",19, "C" ,"A",12,15);
     Redefinition -> Function2();
-    cout<<endl;
     Redefinition -> Example2();
+    cout<<endl;
+    StuffMember A ("Sanya",32, "ABC" ,"A",26,27);
+    A.Best(A);
+    A.Best(*Stuff);
+    A.Best(*Redefinition);
     return 0;
 
 }
