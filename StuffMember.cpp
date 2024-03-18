@@ -15,10 +15,10 @@ StuffMember ::StuffMember(string Hname , int Hyears, string Hschedule ,string ne
     os<<"Name: "<<obj.name<<"  Age: "<<obj.age<<"  Years: "<<obj.years<<static_cast <const Hotel&>(obj);
     return os;
 }
-void StuffMember :: Function(){
+void StuffMember :: Function2(){
     cout<<"Name: "<<name<<endl<<"Age: "<<age<<endl<<"Years: "<<years<<endl;
 };
-void StuffMember ::Example (){
+void StuffMember ::Example2 (){
     cout <<"Subsidiary class function method";
     cout<<endl;
 }

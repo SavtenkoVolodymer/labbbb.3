@@ -85,6 +85,18 @@ build CMakeFiles/Lab.dir/Owner.cpp.obj: CXX_COMPILER__Lab_unscanned_Debug C$:/La
   OBJECT_DIR = CMakeFiles\Lab.dir
   OBJECT_FILE_DIR = CMakeFiles\Lab.dir
 
+build CMakeFiles/Lab.dir/Rooms.cpp.obj: CXX_COMPILER__Lab_unscanned_Debug C$:/Lab/Rooms.cpp || cmake_object_order_depends_target_Lab
+  DEP_FILE = CMakeFiles\Lab.dir\Rooms.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Lab.dir
+  OBJECT_FILE_DIR = CMakeFiles\Lab.dir
+
+build CMakeFiles/Lab.dir/PrivateRooms.cpp.obj: CXX_COMPILER__Lab_unscanned_Debug C$:/Lab/PrivateRooms.cpp || cmake_object_order_depends_target_Lab
+  DEP_FILE = CMakeFiles\Lab.dir\PrivateRooms.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Lab.dir
+  OBJECT_FILE_DIR = CMakeFiles\Lab.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Lab
@@ -93,7 +105,7 @@ build CMakeFiles/Lab.dir/Owner.cpp.obj: CXX_COMPILER__Lab_unscanned_Debug C$:/La
 #############################################
 # Link the executable Lab.exe
 
-build Lab.exe: CXX_EXECUTABLE_LINKER__Lab_Debug CMakeFiles/Lab.dir/main.cpp.obj CMakeFiles/Lab.dir/Client.cpp.obj CMakeFiles/Lab.dir/Hotel.cpp.obj CMakeFiles/Lab.dir/StuffMember.cpp.obj CMakeFiles/Lab.dir/Admin.cpp.obj CMakeFiles/Lab.dir/Owner.cpp.obj
+build Lab.exe: CXX_EXECUTABLE_LINKER__Lab_Debug CMakeFiles/Lab.dir/main.cpp.obj CMakeFiles/Lab.dir/Client.cpp.obj CMakeFiles/Lab.dir/Hotel.cpp.obj CMakeFiles/Lab.dir/StuffMember.cpp.obj CMakeFiles/Lab.dir/Admin.cpp.obj CMakeFiles/Lab.dir/Owner.cpp.obj CMakeFiles/Lab.dir/Rooms.cpp.obj CMakeFiles/Lab.dir/PrivateRooms.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Lab.dir

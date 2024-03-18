@@ -21,8 +21,8 @@ public:
     ~Client() override {};
 
     void Function () ;
-    void Example () override;
-    void Function2 ();
+    void Example ();
+    void Function2 () override;
     void Example2 () override;
 
 };

@@ -15,9 +15,11 @@ public:
     friend ostream &operator<<(ostream &os, const StuffMember &obj);
     StuffMember (StuffMember &&other);
     ~StuffMember() override {};
-    void Function () ;
-    void Example () override ;
+//    void Function () ;
+//    void Example () ;
     void Best (Hotel &other);
+    void Function2() override;
+    void Example2() override;
 };
 
 

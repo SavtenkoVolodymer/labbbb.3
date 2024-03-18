@@ -14,4 +14,8 @@ add_executable(Lab main.cpp
         Admin.h
         Owner.cpp
         Owner.h
+        Rooms.cpp
+        Rooms.h
+        PrivateRooms.cpp
+        PrivateRooms.h
 )
