@@ -31,19 +31,6 @@ Hotel Hotel::operator=(const Hotel &rhs) {
     }
 
 }
-void Hotel :: Function (){
-    cout<<"  Name: "<<name<<endl<<"  Years: "<<  years<<endl<<"  Schedule: "<<  schedule<<endl;
-}
-void Hotel :: Example(){
-    cout << "Parent class function method";
-}
-void Hotel :: Function2 (){
-    cout<<"  Name: "<<name<<endl<<"  Years: "<<  years<<endl<<"  Schedule: "<<  schedule<<endl;
-}
-void Hotel :: Example2(){
-    cout << "Parent class function method";
-}
-
 
 
 

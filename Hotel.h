@@ -16,13 +16,9 @@ public:
     Hotel (const Hotel &other);
     Hotel (Hotel &&other);
     Hotel operator=(const Hotel &rhs);
-    virtual ~Hotel(){}
+    ~Hotel(){}
 
-    void Function ();
-    void Example ();
 
-    virtual void Function2 ();
-    virtual void Example2 ();
 
 };
 

@@ -22,24 +22,7 @@ int main() {
 //    Owner Name6 ("Anya",12,"Female",Name5);
 //    cout<<Name6;
 
-    Hotel *Pointer = new Client ("Anya",25, "B" ,"A",12,15);
-    Pointer -> Function();
-    Pointer -> Example();
-    cout<<endl;
-    Hotel *Stuff = new StuffMember ("Vlad",29, "A" ,"A",11,17);
-    Stuff -> Function2();
-    Stuff -> Example2();
-    cout<<endl;
-    Hotel *Redefinition = new Client ("Anton",19, "C" ,"A",12,15);
-    Redefinition -> Function2();
-    Redefinition -> Example2();
-    cout<<endl;
-    StuffMember A ("Sanya",32, "ABC" ,"A",26,27);
-    A.Best(A);
-    A.Best(*Stuff);
-    A.Best(*Redefinition);
-    
-    //Rooms A ("lux",1);
+
 
     return 0;
 }

@@ -8,17 +8,15 @@ using namespace std;
 
 
 class PrivateRooms : public Rooms {
-    string name;
-    int namber;
+    int number;
     string client;
 public:
     PrivateRooms();
-    PrivateRooms(string Rname,int Rprice , string newname,int newnamber,string newclient);
+    PrivateRooms(string Rname,int Rprice ,int new_number,string newclient);
     friend ostream & operator<<(ostream &os,const PrivateRooms &obj);
     ~PrivateRooms(){};
-    void PureFunction () override;
-    void PureExample () override {cout<<"g";};
-
+    int getNumber();
+    string getClient();
 };
 
 

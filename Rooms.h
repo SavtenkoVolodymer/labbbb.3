@@ -15,8 +15,6 @@ public:
     Rooms(string newname,int newprice);
     friend ostream & operator<<(ostream &os,const Rooms &obj);
     ~Rooms(){};
-    virtual void PureFunction () = 0;
-    virtual void PureExample () = 0;
 };
 
 
