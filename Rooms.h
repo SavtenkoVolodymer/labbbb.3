@@ -10,9 +10,11 @@ class Rooms {
 private :
     string name;
     int price;
+    int capacity;
+    int number;
 public:
     Rooms();
-    Rooms(string newname,int newprice);
+    Rooms(string newname,int newprice,int newcapacity,int newnumber);
     friend ostream & operator<<(ostream &os,const Rooms &obj);
     ~Rooms(){};
 };

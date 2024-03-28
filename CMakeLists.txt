@@ -20,4 +20,8 @@ add_executable(Lab main.cpp
         PrivateRooms.h
         VipClient.cpp
         VipClient.h
+        WrongChoice.h
+        WrongPassword.h
+        Functions.cpp
+        Functions.h
 )

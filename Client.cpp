@@ -6,9 +6,9 @@
 
 
 Client::Client()
-        : Client ("None",0,0){}
-Client::Client (string newname, int newage , int newdays)
-        :name {newname},age{newage}, days{newdays} {}
+        : Client ("None","None",0,0){}
+Client::Client (string newname,string newsurname, int newage , int newdays)
+        :name {newname},surname {newsurname}, age{newage}, days{newdays} {}
 
 
 
@@ -19,15 +19,15 @@ ostream &operator<<(ostream &os, const Client &obj) {
 }
 
 
-Client Client::operator=(const Client &rhs) {
-    if(this==&rhs)
-        return *this;
-    else{
-        name=rhs.name;
-        age=rhs.age;
-        days=rhs.days;
-        return *this;
-    }
-
-}
+//Client Client::operator=(const Client &rhs) {
+//    if(this==&rhs)
+//        return *this;
+//    else{
+//        name=rhs.name;
+//        age=rhs.age;
+//        days=rhs.days;
+//        return *this;
+//    }
+//
+//}
 

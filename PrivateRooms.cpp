@@ -6,14 +6,12 @@
 
 
 PrivateRooms::PrivateRooms()
-        : Rooms (),number(0),client("None"){}
-PrivateRooms:: PrivateRooms (string Rname, int Rprice, int new_namber, string new_client)
-        :Rooms( Rname, Rprice), number{new_namber},client{new_client} {}
+        : Rooms (),housemaid("None"){}
+PrivateRooms:: PrivateRooms (string Rname,int Rprice,int Rcapacity, int Rnumber, string new_housemaid)
+        :Rooms( Rname, Rprice,Rcapacity,Rnumber), housemaid{new_housemaid} {}
 
 
-int PrivateRooms::getNumber(){
-    return number;
-}
-string PrivateRooms::getClient(){
-    return client;
+
+string PrivateRooms::getHousemaid(){
+    return housemaid;
 }
